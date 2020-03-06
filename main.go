@@ -20,15 +20,15 @@ log.Fatal(http.ListenAndServe(":8000", router))
 }
 
 func signup(w http.ResponseWriter, r *http.Request){
-	fmt.Println("Signup Invoked")
+	w.Write([]byte("successfully called signup" ))
 }
 
 func login(w http.ResponseWriter, r *http.Request){
-fmt.Println("Login Invoked")
+	w.Write([]byte("successfully called login" ))
 }
 
 func ProtectedEndpoint(w http.ResponseWriter, r *http.Request){
-fmt.Println("Endpoint Invoked")
+	w.Write([]byte("successfully called ProtectedEndpoint" ))
 }
 
 func TokenVerifyMiddleware(next http.HandlerFunc) http.HandlerFunc{
