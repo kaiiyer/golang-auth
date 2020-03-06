@@ -1,5 +1,8 @@
 # golang-auth
 A simplified approach to JWT(JSON Web Tokens) Auth with Golang
+
+![Go](https://github.com/kaiiyer/golang-auth/workflows/Go/badge.svg)
+
 ## Installation
 	chmod +x dependencies.sh
 	./dependencies.sh
