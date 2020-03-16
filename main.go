@@ -4,10 +4,42 @@ import (
 "fmt"
 "log"
 "github.com/gorilla/mux"
+"github.com/lib/pq"
 "net/http"
+"database/sql"
 )
 
+type User struct {
+	ID		int `json:"id"`
+	Email		string `json:"email"`
+	Password		string `json:"password"`
+}
+
+type JWT struct {
+	Token string `json:"token"`
+}
+
+type Error struct {
+	Message string `json:"message"`
+}
+
+var db *sql.DB 
+
 func main() {
+	pgUrl, err := pq.ParseURL("postgres://ooioxunz:RT16WK...@drona.db.elephantsql.com:5432/ooioxunz")
+
+	if err != nil{
+		log.Fatal(err)
+    }
+
+	db, err = sql.Open("postgres", pgUrl)
+
+    if err != nil{
+		log.Fatal(err)
+    }
+
+	err = db.Ping()
+
 	router := mux.NewRouter()
 
 	router.HandleFunc("/signup", signup).Methods("POST")
@@ -35,3 +67,4 @@ func TokenVerifyMiddleware(next http.HandlerFunc) http.HandlerFunc{
 fmt.Println("TokenVerifyMiddleware Invoked")
 	return nil
 }
+

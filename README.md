@@ -16,4 +16,6 @@ A simplified approach to JWT(JSON Web Tokens) Auth with Golang
 
 [bcrypt](https://godoc.org/golang.org/x/crypto/bcrypt) - Package bcrypt implements Provos and Mazières's bcrypt adaptive hashing algorithm
 
-[Postman](https://www.postman.com/) - Postman is a collaboration platform for API development. Postman's features simplify each step of building an API and streamline collaboration so you can create better APIs—faster.
+[Postman](https://www.postman.com/) - Postman is a collaboration platform for API development. Postman's features simplify each step of building an API and streamline collaboration so you can create better APIs—faster
+
+[PostgreSQL](https://www.elephantsql.com/) -  PostgreSQL as a Service. Perfectly configured and optimized PostgreSQL databases ready in 2 minutes
