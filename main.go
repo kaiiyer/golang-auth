@@ -12,7 +12,7 @@ import (
 type User struct {
 	ID		int `json:"id"`
 	Email		string `json:"email"`
-	Password		string `json:"password"`
+	Password	string `json:"password"`
 }
 
 type JWT struct {
@@ -26,7 +26,7 @@ type Error struct {
 var db *sql.DB 
 
 func main() {
-	pgUrl, err := pq.ParseURL("postgres://ooioxunz:RT16WK...@drona.db.elephantsql.com:5432/ooioxunz")
+	pgUrl, err := pq.ParseURL("postgres://ooioxunz:...@drona.db.elephantsql.com:5555/ooioxunz")
 
 	if err != nil{
 		log.Fatal(err)
