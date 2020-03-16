@@ -2,6 +2,7 @@
 A simplified approach to JWT(JSON Web Tokens) Auth with Golang
 
 ![Go](https://github.com/kaiiyer/golang-auth/workflows/Go/badge.svg)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4038414210f748bc986bd753fbcab043)](https://app.codacy.com/manual/kaiiyer47/golang-auth?utm_source=github.com&utm_medium=referral&utm_content=kaiiyer/golang-auth&utm_campaign=Badge_Grade_Dashboard)
 [![Go Report Card](https://goreportcard.com/badge/github.com/kaiiyer/golang-auth)](https://goreportcard.com/report/github.com/kaiiyer/golang-auth)
 ## Installation
 	chmod +x dependencies.sh
